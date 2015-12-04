@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
             body = params[:contact][:comments]
             
             ContactMailer.contact_email(name, email, body).deliver
-            flash[:success] = "Message sent."
+            flash[:success] = "Message has sent."
             redirect_to new_contact_path
         else
             flash[:error] = "Error occured, message has not sent."
@@ -20,6 +20,7 @@ class ContactsController < ApplicationController
         end
             
     end
+    
     private
     def contact_params
         params.require(:contact).permit(:name, :email, :comments)
