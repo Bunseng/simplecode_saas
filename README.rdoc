@@ -1,8 +1,6 @@
 == README
 
-Coder Manual Project Application
-Subscription-based web application
-https://codermanual.com
+Project tes
 
 Things you may want to cover:
 
